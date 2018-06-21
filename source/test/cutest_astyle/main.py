@@ -1,5 +1,6 @@
 # coding=utf-8
 
+import os
 import sys
 sys.path.append('..')
 from astyle import AStyle
@@ -8,4 +9,7 @@ from util import Util
 
 AStyle.FormatDocument('')
 AStyleTest.EXPECT_EQ('', '')
-print(Util.sourceDirectory())
+
+if Util.verifyTempDirectoryExist():
+    input_file_path = os.path.join(Util.sourceDirectory(), 'test\\cutest_astyle\\brace_style_options\\input.cpp')
+    print(Util.genTempFilePath(input_file_path))
