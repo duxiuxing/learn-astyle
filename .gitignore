@@ -1,2 +1,2 @@
-source/temp/
-source/test/__pycache__/
+*_output.cpp
+source/__pycache__/
