@@ -1,11 +1,11 @@
 # coding=utf-8
 
+import time
+import os
 import operator
+
 from astyle import AStyle
 from util import Util
-import time
-import shutil
-import os
 
 
 class AStyleTest(object):
@@ -17,7 +17,7 @@ class AStyleTest(object):
         return os.path.join(Util.sourceDirectory(), self.project_name)
 
     def optionFilePath(self):
-        return os.path.join(self.projectDirectory(), 'options.txt')
+        return os.path.join(self.projectDirectory(), 'astyle_options.txt')
 
     def inputFilePath(self):
         return os.path.join(self.projectDirectory(), '{}_input.cpp'.format(self.style_name))

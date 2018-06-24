@@ -2,6 +2,7 @@
 
 import os
 
+
 class Util(object):
     @staticmethod
     def sourceDirectory():

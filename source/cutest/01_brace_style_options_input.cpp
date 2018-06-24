@@ -1,3 +1,4 @@
+// --style=allman {新起一行
 int Foo(bool isBar) {
 	if (isBar) {
 		bar();
