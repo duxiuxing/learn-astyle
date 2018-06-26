@@ -29,8 +29,7 @@ class AStyleTest(object):
         return os.path.join(self.projectDirectory(), '{}_expect.cpp'.format(self.style_name))
 
     def genOutputFile(self):
-        options = Util.readFrom(self.optionFilePath())
-        astyle_object = AStyle(options)
+        astyle_object = AStyle(self.optionFilePath())
         astyle_object.formatDocument(self.inputFilePath(), self.outputFilePath())
         time.sleep(1)
 
