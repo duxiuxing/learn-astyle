@@ -1,4 +1,4 @@
-// --indent=force-tab=2
+﻿// --indent=force-tab=2
 void Foo()
 {
 	if (isBar1

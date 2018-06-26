@@ -1,35 +1,35 @@
-// --break-blocks ²»Ê¹ÓÃ
+ï»¿// --break-blocks ä¸ä½¿ç”¨
 
-// --pad-oper ²Ù×÷·ûÇ°ºó¼Ó¿Õ¸ñ
+// --pad-oper æ“ä½œç¬¦å‰ååŠ ç©ºæ ¼
 if (foo == 2)
 {
 	a = bar((b - c) * a, d--);
 }
 
-// --pad-comma ²»Ê¹ÓÃ
+// --pad-comma ä¸ä½¿ç”¨
 if (isFoo(a, b))
 {
 	bar(a, b);
 }
 
-// --pad-paren À¨ºÅÄÚÍâ¼Ó¿Õ¸ñ£¬²»Ê¹ÓÃ
-// --pad-paren-out ½öÀ¨ºÅÍâ¼Ó¿Õ¸ñ£¬²»Ê¹ÓÃ
-// --pad-first-paren-out ½öµÚÒ»²ãÀ¨ºÅÍâ¼Ó¿Õ¸ñ£¬²»Ê¹ÓÃ
-// --pad-paren-in ½öÀ¨ºÅÄÚ¼Ó¿Õ¸ñ£¬²»Ê¹ÓÃ
+// --pad-paren æ‹¬å·å†…å¤–åŠ ç©ºæ ¼ï¼Œä¸ä½¿ç”¨
+// --pad-paren-out ä»…æ‹¬å·å¤–åŠ ç©ºæ ¼ï¼Œä¸ä½¿ç”¨
+// --pad-first-paren-out ä»…ç¬¬ä¸€å±‚æ‹¬å·å¤–åŠ ç©ºæ ¼ï¼Œä¸ä½¿ç”¨
+// --pad-paren-in ä»…æ‹¬å·å†…åŠ ç©ºæ ¼ï¼Œä¸ä½¿ç”¨
 
-// --pad-header if, for, whileºóÃæ¼Ó¿Õ¸ñ
+// --pad-header if, for, whileåé¢åŠ ç©ºæ ¼
 if (isFoo((a + 2), b))
 {
 	bar(a, b);
 }
 
-// --unpad-paren É¾³ıÀ¨ºÅÄÚ¶àÓàµÄ¿Õ¸ñ
+// --unpad-paren åˆ é™¤æ‹¬å·å†…å¤šä½™çš„ç©ºæ ¼
 if (isFoo((a + 2), b))
 {
 	bar(a, b);
 }
 
-// --delete-empty-lines ²»Ê¹ÓÃ
+// --delete-empty-lines ä¸ä½¿ç”¨
 
 // --align-pointer=name
 // --align-reference=name

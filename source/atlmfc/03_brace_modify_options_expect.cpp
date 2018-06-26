@@ -1,19 +1,19 @@
-// --attach-namespaces namespaceµÄ{²»ĞèÒªĞÂÆğÒ»ĞĞ
+ï»¿// --attach-namespaces namespaceçš„{ä¸éœ€è¦æ–°èµ·ä¸€è¡Œ
 namespace tencent {
 namespace mig {
 
-// --attach-classes ²»Ê¹ÓÃ
+// --attach-classes ä¸ä½¿ç”¨
 class FooClass
 {
 public:
-	// --attach-inlines ²»Ê¹ÓÃ
+	// --attach-inlines ä¸ä½¿ç”¨
 	FooClass()
 	{
 		this->foo = 0;
 	}
 
 	virtual ~FooClass()
-	{} // ¿Õ·½·¨µÄ}²»ĞèÒªĞÂÆğÒ»ĞĞ
+	{} // ç©ºæ–¹æ³•çš„}ä¸éœ€è¦æ–°èµ·ä¸€è¡Œ
 
 protected:
 	int foo;
@@ -22,7 +22,7 @@ protected:
 }
 }
 
-// --attach-extern-c extern "C"µÄ{²»ĞèÒªĞÂÆğÒ»ĞĞ
+// --attach-extern-c extern "C"çš„{ä¸éœ€è¦æ–°èµ·ä¸€è¡Œ
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -33,7 +33,7 @@ void Foo();
 }
 #endif
 
-// --attach-closing-while do...whileÓï¾äÖĞ£¬whileºÍ}·ÅÒ»ĞĞ
+// --attach-closing-while do...whileè¯­å¥ä¸­ï¼Œwhileå’Œ}æ”¾ä¸€è¡Œ
 do
 {
 	bar();

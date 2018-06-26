@@ -1,4 +1,4 @@
-// --indent-classes ²»Ê¹ÓÃ
+ï»¿// --indent-classes ä¸ä½¿ç”¨
 class Foo
 {
 public:
@@ -6,7 +6,7 @@ public:
 	virtual ~Foo();
 };
 
-// --indent-modifiers ²»Ê¹ÓÃ
+// --indent-modifiers ä¸ä½¿ç”¨
 class Foo
 {
 public:
@@ -14,8 +14,8 @@ public:
 	virtual ~Foo();
 };
 
-// --indent-switches ²»Ê¹ÓÃ
-// --indent-cases case×÷ÓÃÓòÏÂµÄ´úÂëÒªËõ½ø
+// --indent-switches ä¸ä½¿ç”¨
+// --indent-cases caseä½œç”¨åŸŸä¸‹çš„ä»£ç è¦ç¼©è¿›
 switch (foo)
 {
 case 1:
@@ -28,7 +28,7 @@ case 2:
 	}
 }
 
-// --indent-namespaces ²»Ê¹ÓÃ
+// --indent-namespaces ä¸ä½¿ç”¨
 namespace foospace {
 
 class Foo
@@ -40,7 +40,7 @@ public:
 
 }
 
-// --indent-after-parens ¶à¸ö·½·¨²ÎÊıºÍÅĞ¶ÏÌõ¼ş·ÖĞĞµÄÊ±ºòÒªËõ½ø
+// --indent-after-parens å¤šä¸ªæ–¹æ³•å‚æ•°å’Œåˆ¤æ–­æ¡ä»¶åˆ†è¡Œçš„æ—¶å€™è¦ç¼©è¿›
 void Foo(bool bar1,
 	bool bar2)
 {
@@ -51,21 +51,21 @@ void Foo(bool bar1,
 		|| foo2;
 }
 
-// --indent-after-parens ÔÚÉùÃ÷µÄÊ±ºò£¬¶à¸ö·½·¨²ÎÊı·ÖĞĞ½¨ÒéÕâÃ´Ğ´
+// --indent-after-parens åœ¨å£°æ˜çš„æ—¶å€™ï¼Œå¤šä¸ªæ–¹æ³•å‚æ•°åˆ†è¡Œå»ºè®®è¿™ä¹ˆå†™
 void Foo2(
 	bool bar1, // param1
 	bool bar2  // param2
 )
 {
-	// --indent-after-parens ÔÚµ÷ÓÃµÄÊ±ºò£¬¶à¸ö·½·¨²ÎÊı·ÖĞĞ½¨ÒéÕâÃ´Ğ´
+	// --indent-after-parens åœ¨è°ƒç”¨çš„æ—¶å€™ï¼Œå¤šä¸ªæ–¹æ³•å‚æ•°åˆ†è¡Œå»ºè®®è¿™ä¹ˆå†™
 	isLongVariable = isLongFunction(bar1,
 			bar2);
 }
 
-// --indent-continuation ²»Ê¹ÓÃ
-// --indent-labels ²»Ê¹ÓÃ
+// --indent-continuation ä¸ä½¿ç”¨
+// --indent-labels ä¸ä½¿ç”¨
 
-// --indent-preproc-block ºêÇ¶Ì×µÄÊ±ºòÒªËõ½ø
+// --indent-preproc-block å®åµŒå¥—çš„æ—¶å€™è¦ç¼©è¿›
 #ifdef _WIN32
 	#include <windows.h>
 	#ifndef NO_EXPORT
@@ -73,12 +73,12 @@ void Foo2(
 	#endif
 #endif
 
-// --indent-preproc-define ´úÂëºêÒªËõ½ø
+// --indent-preproc-define ä»£ç å®è¦ç¼©è¿›
 #define Is_Bar(arg,a,b) \
 	(Is_Foo((arg), (a)) \
 		|| Is_Foo((arg), (b)))
 
-// --indent-preproc-cond ±àÒëºê²»Ëõ½ø
+// --indent-preproc-cond ç¼–è¯‘å®ä¸ç¼©è¿›
 void Foo()
 {
 	isFoo = true;
@@ -89,7 +89,7 @@ void Foo()
 #endif
 }
 
-// --indent-col1-comments ×¢ÊÍËæ¶ÎÂäËõ½ø
+// --indent-col1-comments æ³¨é‡Šéšæ®µè½ç¼©è¿›
 void Foo()
 {
 	// comment
@@ -99,10 +99,10 @@ void Foo()
 	}
 }
 
-// --min-conditional-indent ²»Ê¹ÓÃ
-// --max-continuation-indent ²»Ê¹ÓÃ
+// --min-conditional-indent ä¸ä½¿ç”¨
+// --max-continuation-indent ä¸ä½¿ç”¨
 
-// Êı×éÉùÃ÷½¨ÒéÕâÃ´Ğ´
+// æ•°ç»„å£°æ˜å»ºè®®è¿™ä¹ˆå†™
 fooArray[] =
 {
 	red,
@@ -110,7 +110,7 @@ fooArray[] =
 	blue
 };
 
-// Ã¶¾ÙÉùÃ÷½¨ÒéÕâÃ´Ğ´
+// æšä¸¾å£°æ˜å»ºè®®è¿™ä¹ˆå†™
 enum COLOR
 {
 	red,
