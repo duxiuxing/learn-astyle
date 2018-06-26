@@ -96,6 +96,6 @@ Stack< int, List< int >> stack1;
 
 // --remove-comment-prefix 以*开头的注释，去掉*
 /*
-   comment line 1
-   comment line 2
+    comment line 1
+    comment line 2
 */
