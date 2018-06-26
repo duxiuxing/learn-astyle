@@ -1,4 +1,4 @@
-// -break-closing-braces ²»Ê¹ÓÃ
+ï»¿// -break-closing-braces ä¸ä½¿ç”¨
 void Foo( bool isFoo )
 {
   if ( isFoo )
@@ -11,7 +11,7 @@ void Foo( bool isFoo )
   }
 }
 
-// --break-elseifs ²»Ê¹ÓÃ
+// --break-elseifs ä¸ä½¿ç”¨
 if ( isFoo )
 {
   bar();
@@ -38,8 +38,8 @@ else if ( isFoo2() )
   bar2();
 }
 
-// --break-one-line-headers if, while, elseÀïÃæ£¬²»°ÑÌõ¼şÓï¾äºÍÖ´ĞĞÓï¾ä·ÅÒ»ĞĞ
-// --add-braces Ò»ĞĞµÄÖ´ĞĞÓï¾ä×Ô¶¯¼ÓÉÏ{}
+// --break-one-line-headers if, while, elseé‡Œé¢ï¼Œä¸æŠŠæ¡ä»¶è¯­å¥å’Œæ‰§è¡Œè¯­å¥æ”¾ä¸€è¡Œ
+// --add-braces ä¸€è¡Œçš„æ‰§è¡Œè¯­å¥è‡ªåŠ¨åŠ ä¸Š{}
 void Foo( bool isFoo )
 {
   if ( isFoo1 )
@@ -71,30 +71,30 @@ if ( isFoo )
   isFoo = false;
 }
 
-// --add-one-line-braces ²»Ê¹ÓÃ
-// --remove-braces ²»Ê¹ÓÃ
+// --add-one-line-braces ä¸ä½¿ç”¨
+// --remove-braces ä¸ä½¿ç”¨
 
-// --keep-one-line-blocks ²»Ê¹ÓÃ
+// --keep-one-line-blocks ä¸ä½¿ç”¨
 if ( isFoo )
 {
   isFoo = false;
   cout << isFoo << endl;
 }
 
-// --keep-one-line-statements ²»Ê¹ÓÃ
+// --keep-one-line-statements ä¸ä½¿ç”¨
 if ( isFoo )
 {
   isFoo = false;
   cout << isFoo << endl;
 }
 
-// --convert-tabs Èç¹û¾ö¶¨È«ÃñÊ¹ÓÃ¿Õ¸ñ´úÌæTab£¬ÄÇ¾ÍÓÃ°É
+// --convert-tabs å¦‚æœå†³å®šå…¨æ°‘ä½¿ç”¨ç©ºæ ¼ä»£æ›¿Tabï¼Œé‚£å°±ç”¨å§
 
-// --close-templates ²»Ê¹ÓÃ
+// --close-templates ä¸ä½¿ç”¨
 Stack< int, List< int > > stack1;
 Stack< int, List< int >> stack1;
 
-// --remove-comment-prefix ÒÔ*¿ªÍ·µÄ×¢ÊÍ£¬È¥µô*
+// --remove-comment-prefix ä»¥*å¼€å¤´çš„æ³¨é‡Šï¼Œå»æ‰*
 /*
    comment line 1
    comment line 2

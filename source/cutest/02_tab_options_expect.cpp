@@ -1,4 +1,4 @@
-// --indent=spaces=2
+﻿// --indent=spaces=2
 void Foo()
 {
   if ( isBar1

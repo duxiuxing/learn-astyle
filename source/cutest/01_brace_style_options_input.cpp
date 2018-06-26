@@ -1,4 +1,4 @@
-// --style=allman {ÐÂÆðÒ»ÐÐ
+ï»¿// --style=allman {æ–°èµ·ä¸€è¡Œ
 int Foo(bool isBar)
 {
 	if (isBar)
