@@ -6,7 +6,7 @@ sys.path.append('..')
 from astyle_test import AStyleTest
 
 if __name__ == '__main__':
-    project_name = 'cutest'
+    project_name = 'cppunit'
 
     brace_style_options_test = AStyleTest(project_name, '01_brace_style_options')
     brace_style_options_test.check()
