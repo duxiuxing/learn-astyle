@@ -2,7 +2,7 @@
 void Foo()
 {
   if ( isBar1
-    && isBar2 )
+       && isBar2 )
   {
     bar();
   }

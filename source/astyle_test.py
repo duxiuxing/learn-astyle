@@ -47,18 +47,18 @@ class AStyleTest(object):
             if line_index < output_line_count:
                 output_line = output_lines[line_index]
             else:
-                print('{} line {} is different!'.format(self.outputFilePath(), line_index))
+                print('{} line {} is different!'.format(self.outputFilePath(), line_index + 1))
                 return False
 
             expect_line = ''
             if line_index < expect_line_count:
                 expect_line = expect_lines[line_index]
             else:
-                print('{} line {} is different!'.format(self.expectFilePath(), line_index))
+                print('{} line {} is different!'.format(self.expectFilePath(), line_index + 1))
                 return False
 
             if operator.eq(output_line, expect_line) is False:
-                print('{} line {} is different!'.format(self.outputFilePath(), line_index))
+                print('{} line {} is different!'.format(self.outputFilePath(), line_index + 1))
                 return False
             else:
                 line_index = line_index + 1

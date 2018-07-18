@@ -42,13 +42,13 @@ public:
 
 // --indent-after-parens 多个方法参数和判断条件分行的时候要缩进
 void Foo( bool bar1,
-  bool bar2 )
+          bool bar2 )
 {
   isLongFunction( bar1,
-    bar2 );
+                  bar2 );
 
   isLongVariable = foo1
-    || foo2;
+                   || foo2;
 }
 
 // --indent-after-parens 在声明的时候，多个方法参数分行建议这么写
@@ -59,7 +59,7 @@ void Foo2(
 {
   // --indent-after-parens 在调用的时候，多个方法参数分行建议这么写
   isLongVariable = isLongFunction( bar1,
-      bar2 );
+                                   bar2 );
 }
 
 // --indent-continuation 不使用
@@ -76,7 +76,7 @@ void Foo2(
 // --indent-preproc-define 代码宏要缩进
 #define Is_Bar(arg,a,b) \
   (Is_Foo((arg), (a)) \
-    || Is_Foo((arg), (b)))
+   || Is_Foo((arg), (b)))
 
 // --indent-preproc-cond 编译宏不缩进
 void Foo()
