@@ -17,7 +17,7 @@ class AStyleTest(object):
         return os.path.join(Util.sourceDirectory(), self.project_name)
 
     def optionFilePath(self):
-        return os.path.join(self.projectDirectory(), 'astyle_options.txt')
+        return os.path.join(self.projectDirectory(), '{}_astyle_options.txt'.format(self.project_name))
 
     def inputFilePath(self):
         return os.path.join(self.projectDirectory(), '{}_input.cpp'.format(self.style_name))

@@ -65,7 +65,12 @@ if (isFoo)
 	isFoo = false; cout << isFoo << endl;
 }
 
-// --convert-tabs 如果决定全民使用空格代替Tab，那就用吧
+// --convert-tabs 把除了缩进以外的tab都转换成空格
+struct FooStruct
+{
+  int           foo1;
+  std::string   foo2;
+};
 
 // --close-templates 不使用
 Stack< int, List< int > > stack1;
