@@ -68,8 +68,15 @@ if (isFoo)
 // --convert-tabs 把除了缩进以外的tab都转换成空格
 struct FooStruct
 {
-  int           foo1;
-  std::string   foo2;
+	FooStruct()
+	{
+		foo1	= 1;
+		foo22	= "22";
+		foo333	= 3.33;
+	}
+	int			foo1;
+	std::string	foo22;
+	float		foo333;
 };
 
 // --close-templates 不使用

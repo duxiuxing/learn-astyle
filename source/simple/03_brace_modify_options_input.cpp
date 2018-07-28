@@ -12,7 +12,23 @@ namespace tencent
 				this->foo = 0;
 			}
 
-			virtual ~FooClass()
+			virtual ~FooClass()	{} // 空方法的}不需要新起一行
+
+		protected:
+			int foo;
+		};
+
+		// --attach-classes 不使用
+		class BarClass
+		{
+		public:
+			// --attach-inlines 不使用
+			BarClass()
+			{
+				this->foo = 0;
+			}
+
+			virtual ~BarClass()
 			{} // 空方法的}不需要新起一行
 
 		protected:
