@@ -1,4 +1,20 @@
-﻿// -break-closing-braces 不使用
+﻿/*
+本文件的样本代码来自于astyle.html中的Formatting Options部分
+
+1. 不使用--break-closing-braces，验证过用不用效果都一样；
+2. 不使用--break-elseifs，避免增加换行和缩进；
+3. 使用--break-one-line-headers，不把if、while和else里面的条件代码和执行代码放一行；
+4. 不使用--add-braces，验证过用不用效果都一样；：
+5. 不使用--add-one-line-braces，避免破坏代码的段落关系；
+6. 不使用--remove-braces，避免破坏代码的段落关系；
+7. 不使用--break-return-type和--attach-return-type，没有必要要求统一；
+8. 使用--keep-one-line-blocks，避免破坏代码的段落关系；
+9. 使用--keep-one-line-statements，避免破坏代码的段落关系；
+最后强调一下：执行代码（即使只有一行）都放在{}内是一个好习惯，
+如果苹果公司的程序员能贯彻这种做法，可能就不会出现gotofail安全漏洞了。
+*/
+
+// 1. --break-closing-braces的代码片段
 void Foo(bool isFoo) {
 	if (isFoo) {
 		bar();
@@ -7,31 +23,20 @@ void Foo(bool isFoo) {
 	}
 }
 
-// --break-elseifs 不使用
+// 2. --break-elseifs的代码片段
 if (isFoo) {
-	bar();
-}
-else if (isFoo1()) {
-	bar1();
-}
-else if (isFoo2()) {
-	bar2;
-}
-
-if (isFoo) {
-	bar();
+    bar();
 }
 else
-	if (isFoo1()) {
-		bar1();
-	}
-	else
-		if (isFoo2()) {
-			bar2();
-		}
+    if (isFoo1()) {
+        bar1();
+    }
+    else
+        if (isFoo2()) {
+            bar2();
+        }
 
-// --break-one-line-headers if, while, else里面，不把条件语句和执行语句放一行
-// --add-braces 一行的执行语句自动加上{}
+// 3. --break-one-line-headers的代码片段
 void Foo(bool isFoo)
 {
 	if (isFoo1) bar1();
@@ -39,27 +44,23 @@ void Foo(bool isFoo)
 	if (isFoo2) { bar2(); }
 }
 
-void Foo(bool isFoo)
-{
-	if (isFoo1)
-		bar1();
-
-	if (isFoo2) {
-		bar2();
-	}
-}
-
+// 4. --add-braces的代码片段
 if (isFoo)
 	isFoo = false;
 
-// --add-one-line-braces 不使用
-// --remove-braces 不使用
+// 5. --add-one-line-braces的代码片段
+if (isFoo)
+{ isFoo = false; }
 
-// --keep-one-line-blocks 不使用
+// 7. --break-return-type和--attach-return-type的代码片段
+void
+Foo(bool isFoo);
+
+// 8. --keep-one-line-blocks的代码片段
 if (isFoo)
 { isFoo = false; cout << isFoo << endl; }
 
-// --keep-one-line-statements 不使用
+// 9. --keep-one-line-statements的代码片段
 if (isFoo)
 {
 	isFoo = false; cout << isFoo << endl;

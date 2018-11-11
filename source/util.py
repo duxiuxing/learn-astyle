@@ -1,5 +1,6 @@
 # coding=utf-8
 
+import codecs
 import os
 
 
@@ -11,7 +12,7 @@ class Util(object):
     @staticmethod
     def readFrom(file_path):
         file_context = ''
-        file_object = open(file_path, 'r', encoding='utf_8_sig')
+        file_object = codecs.open(file_path, 'r', 'utf_8_sig')
         try:
             file_context = file_object.read()
         finally:
@@ -22,7 +23,7 @@ class Util(object):
     @staticmethod
     def readLinesFrom(file_path):
         file_context = []
-        file_object = open(file_path, 'r', encoding='utf_8_sig')
+        file_object = codecs.open(file_path, 'r', 'utf_8_sig')
         try:
             file_context = file_object.read().splitlines()
         finally:
