@@ -7,7 +7,7 @@
     4. 使用--indent-cases，case代码块需要统一加一个缩进；
     5. 不使用--indent-namespaces，namespace代码块不需要统一加缩进；
     6. 不使用--indent-after-parens和--indent-continuation，方法和=语句换行的时候，保持参数对齐。
-    7. 不使用--indent-labels，建议尽量避免使用goto；
+    7. 不使用--indent-labels，建议尽量避免使用goto语句；
     8. 使用--indent-preproc-block，宏嵌套的时候需要缩进，以提高可读性；
     9. 使用--indent-preproc-define，多行的宏定义需要缩进，以提高可读性；
     10.不使用--indent-preproc-cond，编译宏不需要和代码保持一样的缩进；
@@ -16,7 +16,7 @@
     13.因为.6没有使用--indent-continuation，而且.12中min值设为0，所以不需要使用--max-continuation-indent。
 */
 
-// 1. 使用--indent-classes的代码片段
+// 1. --indent-classes的代码片段
 class Foo
 {
 public:
@@ -101,7 +101,7 @@ void Foooooooooooooooooooo(
                 foobar4, foobar5, foobar6, foobar7);
 }
 
-// 7. 使用--indent-labels的代码片段
+// 7. --indent-labels的代码片段
 void Foo()
 {
     while (isFoo)
@@ -115,7 +115,7 @@ error:
     }
 }
 
-// 8. 没有使用--indent-preproc-block的代码片段
+// 8. --indent-preproc-block的代码片段
 #ifdef _WIN32
     #include <windows.h>
     #ifndef NO_EXPORT
@@ -123,12 +123,12 @@ error:
     #endif
 #endif
 
-// 9. 没有使用indent-preproc-define的代码片段
+// 9. indent-preproc-define的代码片段
 #define Is_Bar(arg,a,b) \
     (Is_Foo((arg), (a)) \
      || Is_Foo((arg), (b)))
 
-// 10.使用--indent-preproc-cond的代码片段
+// 10.--indent-preproc-cond的代码片段
 void Foo()
 {
     isFoo = true;
@@ -139,7 +139,7 @@ void Foo()
 #endif
 }
 
-// 11.没有使用--indent-col1-comments的代码片段
+// 11.--indent-col1-comments的代码片段
 void Foo()
 {
     // comment
@@ -149,7 +149,7 @@ void Foo()
     }
 }
 
-// 12.没有使用--min-conditional-indent的代码片段
+// 12.--min-conditional-indent的代码片段
 void Foo()
 {
     // setting makes this non-braced code less clear

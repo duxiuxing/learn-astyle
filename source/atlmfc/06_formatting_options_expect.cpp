@@ -3,9 +3,21 @@
 
     1. 不使用--break-closing-braces，验证过用不用效果都一样；
     2. 不使用--break-elseifs，避免增加换行和缩进；
-    3. 使用--break-one-line-headers和--add-braces，目的在于：
-    3.1 不把if、while和else里面的条件代码和执行代码放一行；
-    3.2 执行代码（即使只有一行）都放在{}内，如果苹果公司的程序员能贯彻这种做法，可能就不会发生gotofail安全漏洞了；
+    3. 使用--break-one-line-headers，不把if、while和else里面的条件代码和执行代码放一行；
+    4. 不使用--add-braces，验证过用不用效果都一样；：
+    5. 不使用--add-one-line-braces，避免破坏代码的段落关系；
+    6. 不使用--remove-braces，避免破坏代码的段落关系；
+    7. 不使用--break-return-type和--attach-return-type，没有必要要求统一；
+    8. 使用--keep-one-line-blocks，避免破坏代码的段落关系；
+    9. 使用--keep-one-line-statements，避免破坏代码的段落关系；
+    10.使用--convert-tabs，这样一来，代码中所有的Tab都会转成空格；
+    11.不使用--close-templates，没有必要要求统一；
+    12.使用--remove-comment-prefix，有助于优化块注释的排版；
+    13.不使用--max-code-length和--break-after-logical，避免破坏代码的段落关系；
+    14.使用--mode=c，C/C++代码需要使用这个参数。
+
+    最后强调一下：执行代码（即使只有一行）都放在{}内是一个好习惯，
+    如果苹果公司的程序员能贯彻这种做法，可能就不会出现gotofail安全漏洞了。
 */
 
 // 1. --break-closing-braces的代码片段
@@ -35,7 +47,7 @@ else if (isFoo2())
     bar2();
 }
 
-// 3. --break-one-line-headers和--add-braces的代码片段
+// 3. --break-one-line-headers的代码片段
 void Foo(bool isFoo)
 {
     if (isFoo1)
@@ -73,26 +85,51 @@ if (isFoo)
     isFoo = false; cout << isFoo << endl;
 }
 
-// --convert-tabs 把除了缩进以外的tab都转换成空格
+// 10.--convert-tabs的代码片段
 struct FooStruct
 {
-	FooStruct()
-	{
-		foo1    = 1;
-		foo22   = "22";
-		foo333  = 3.33;
-	}
-	int         foo1;
-	std::string foo22;
-	float       foo333;
+    FooStruct()
+    {
+        foo1    = 1;
+        foo22   = "22";
+        foo333  = 3.33;
+    }
+    int         foo1;
+    std::string foo22;
+    float       foo333;
 };
 
-// --close-templates 不使用
+// 11.--close-templates的代码片段
 Stack< int, List< int > > stack1;
 Stack< int, List< int >> stack1;
 
-// --remove-comment-prefix 以*开头的注释，去掉*
+// 12.--remove-comment-prefix的代码片段
 /*
     comment line 1
     comment line 2
 */
+
+/*
+    comment line 1
+    comment line 2
+*/
+
+// 13.--max-code-length和--break-after-logical的代码片段
+if (thisVariable1 == thatVariable1 || thisVariable2 == thatVariable2 || thisVariable3 == thatVariable3)
+{
+    bar();
+}
+
+if (thisVariable1 == thatVariable1
+    || thisVariable2 == thatVariable2
+    || thisVariable3 == thatVariable3)
+{
+    bar();
+}
+
+if (thisVariable1 == thatVariable1 ||
+    thisVariable2 == thatVariable2 ||
+    thisVariable3 == thatVariable3)
+{
+    bar();
+}
