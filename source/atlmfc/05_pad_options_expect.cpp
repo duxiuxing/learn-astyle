@@ -5,10 +5,10 @@
     2. 使用--pad-oper，在操作符前后加空格；
     3. 根据文档，使用了--pad-oper就不需要使用--pad-comma了；
     4. 小括号内外不需要自动加空格，因此：
-    4.1 不使用--pad-paren；
-    4.2 不使用--pad-paren-out；
-    4.3 不使用--pad-first-paren-out；
-    4.4 不使用--pad-paren-in。
+      4.1 不使用--pad-paren；
+      4.2 不使用--pad-paren-out；
+      4.3 不使用--pad-first-paren-out；
+      4.4 不使用--pad-paren-in。
     5. 使用--pad-header，if、for和while后面自动加空格；
     6. 使用--unpad-paren，删除括号内多余的空格；
     7. 不使用--delete-empty-lines，避免破坏代码的段落关系；

@@ -13,7 +13,7 @@
 10.不使用--indent-preproc-cond，编译宏不需要和代码保持一样的缩进；
 11.使用--indent-col1-comments，注释需要和代码保持一样的缩进；
 12.使用--min-conditional-indent=0，if语句换行的时候，保持参数对齐；
-13.因为.6没有使用--indent-continuation，而且.12中min值设为0，所以不需要使用--max-continuation-indent。
+13.因为6.没有使用--indent-continuation，而且12.中min值设为0，所以不需要使用--max-continuation-indent。
 */
 
 // 1. --indent-classes的代码片段

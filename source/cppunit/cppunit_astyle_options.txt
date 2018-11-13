@@ -1,1 +1,6 @@
-﻿--style=allman --indent=spaces=2 --align-pointer=name --align-reference=name --attach-namespaces --attach-extern-c --attach-closing-while --indent-cases --indent-preproc-block --indent-preproc-define --indent-col1-comments --pad-oper --pad-paren-in --pad-header --break-one-line-headers --add-brackets --convert-tabs --remove-comment-prefix --mode=c
+﻿--style=allman
+--indent=spaces=2
+--attach-namespaces --attach-extern-c --attach-closing-while
+--indent-cases --indent-preproc-block --indent-preproc-define --indent-col1-comments --min-conditional-indent=0
+--pad-oper --pad-paren-in --pad-header --align-pointer=name --align-reference=name
+--break-one-line-headers --add-brackets --keep-one-line-blocks --keep-one-line-statements --convert-tabs --remove-comment-prefix --mode=c
