@@ -3,8 +3,8 @@
 
     1. 不使用--break-closing-braces，验证过用不用效果都一样；
     2. 不使用--break-elseifs，避免增加换行和缩进；
-    3. 使用--break-one-line-headers，不把if、while和else里面的条件代码和执行代码放一行；
-    4. 不使用--add-braces，验证过用不用效果都一样；：
+    3. 使用--break-one-line-headers，不把if、while和else的条件代码和执行代码放一行；
+    4. 使用--add-braces，if、for和while的执行代码放在{}中；
     5. 不使用--add-one-line-braces，避免破坏代码的段落关系；
     6. 不使用--remove-braces，避免破坏代码的段落关系；
     7. 不使用--break-return-type和--attach-return-type，没有必要要求统一；

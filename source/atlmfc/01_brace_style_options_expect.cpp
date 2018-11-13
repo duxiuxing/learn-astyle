@@ -1,9 +1,7 @@
 ﻿/*
     本文件的样本代码来自于astyle.html中的Brace Style Options部分
 
-    使用--style=allman和--add-brackets来控制大括号的排版，即：
-    1. {新起一行；
-    2. if、for和while后面的作用域都加大括号
+    使用--style=allman，{新起一行显示。
 */
 
 // allman style的代码片段
