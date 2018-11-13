@@ -3,4 +3,4 @@
 --attach-namespaces --attach-extern-c --attach-closing-while
 --indent-cases --indent-preproc-block --indent-preproc-define --indent-col1-comments --min-conditional-indent=0
 --pad-oper --pad-paren-in --pad-header --align-pointer=name --align-reference=name
---break-one-line-headers --add-brackets --keep-one-line-blocks --keep-one-line-statements --convert-tabs --remove-comment-prefix --mode=c
+--add-brackets --keep-one-line-blocks --keep-one-line-statements --convert-tabs --remove-comment-prefix --mode=c

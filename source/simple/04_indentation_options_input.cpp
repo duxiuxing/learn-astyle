@@ -24,7 +24,7 @@ class Foo
 		virtual ~Foo();
 };
 
-// 2. 使用--indent-modifiers的代码片段
+// 2. --indent-modifiers的代码片段
 class Foo
 {
  public:
@@ -32,7 +32,7 @@ class Foo
   virtual ~Foo();
 };
 
-// 3&4. 以下代码片段，使用了--indent-switches，没有使用--indent-cases
+// 3&4. --indent-switches和--indent-cases的代码片段
 void Foo()
 {
 	switch (foo)
@@ -60,7 +60,7 @@ namespace foospace {
 
 }
 
-// 6. 使用--indent-after-parens的代码片段
+// 6. --indent-after-parens的代码片段
 void Foo(bool bar1,
 	bool bar2)
 {
